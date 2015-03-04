@@ -28,11 +28,11 @@ col_magenta =      '\033[35m'
 col_cyan =         '\033[36m'
 col_ltgray =       '\033[37m'
 
-col_norm =	       '\033[00m'
+col_norm =         '\033[00m'
 col_background =   '\033[07m'
 col_brighten =     '\033[01m'
 col_underline =    '\033[04m'
-col_blink = 	   '\033[05m'
+col_blink =        '\033[05m'
 
 
 
@@ -42,8 +42,9 @@ col_blink = 	   '\033[05m'
 # pairs. If a pattern is matched, the prefix is inserted before the line.
 
 # common patterns
-filename_pat = r'[A-z0-9_\/\. ]+'
-gcc_msg_pat  = filename_pat + r':( In |\d+:\d+:)'
+filename_pat = r'[A-z0-9_\-\/\. ]+'
+gcc_msg_pat  = filename_pat + r':( In |\d+:|\d+:\d+:)'
+
 
 patterns = [
         # make messages
